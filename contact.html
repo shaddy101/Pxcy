@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="nav1">
+          <img src="pxcy..svg" alt="" />
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <style>
+        .contact-form {
+          width: 70%;
+          padding-top: 0px;
+          margin: 50px auto; /* Center the form */
+        }
+
+        .contact-title {
+          font-size: 45px;
+          font-weight: bold;
+          margin-bottom: 50px;
+        }
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .row label {
+          font-size: 14px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .row div {
+          flex: 1;
+          margin-right: 20px;
+        }
+
+        .row p {
+          font-size: 12px;
+          opacity: 0.6;
+          margin: 0;
+        }
+
+        .row input[type="text"],
+        .row input[type="email"],
+        .row input[type="tel"],
+        .row textarea {
+          border: none;
+          border-bottom: 2px solid #ccc;
+          padding: 5px;
+          padding-top: 10px;
+          padding-left: 0px;
+          transition: border-color 0.3s;
+          width: 100%;
+          background-color: transparent; /* Make background transparent */
+        }
+
+        .row input[type="text"]:hover,
+        .row input[type="email"]:hover,
+        .row input[type="tel"]:hover,
+        .row textarea:hover {
+          border-color: #000;
+        }
+
+        /* Submit button styles */
+        .submit-row {
+          margin-top: 20px;
+          text-align: left;
+        }
+
+        .submit-button {
+          background-color: transparent;
+          color: black;
+          border: none;
+          padding: 10px 0px;
+          padding-left: 3px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          border-radius: 5px;
+          transition: background-color 0.3s, color 0.3s;
+        }
+
+        .submit-button:hover {
+          background-color: #333;
+          color: #fff;
+        }
+
+        .submit-button span {
+          margin-right: 5px;
+        }
+
+        /* Email us section */
+        .email-us {
+          font-size: 12px;
+          text-align: left;
+          color: #666;
+          margin-top: 10px;
+        }
+      </style>
+    </header>
+    <div class="main">
+      <div class="main-left"></div>
+      <div class="main-right">
+        <div class="contact-form">
+          <div class="contact-title">Contact Us</div>
+          <form>
+            <div class="row">
+              <div style="margin-right: 10px">
+                <!-- Add space between First Name and Last Name -->
+                <label for="fname">First Name:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  required
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div>
+                <label for="lname">Last Name:</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  required
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div>
+                <label for="phone">Phone:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Enter your phone number"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="submit-row">
+              <button type="submit" class="submit-button">
+                <span>Submit</span>
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </form>
+          <div class="email-us">
+            Email us at <span style="opacity: 0.6">rohan@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
